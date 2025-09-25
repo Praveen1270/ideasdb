@@ -6,6 +6,39 @@ import { Badge } from "@/components/ui/badge"
 import { Database, Users, TrendingUp, Globe, Search, Plus, Minus, ArrowRight, Menu } from "lucide-react"
 import { useState } from "react"
 
+const faqData = [
+  {
+    question: "What is IdeaDB's primary function?",
+    answer:
+      "IdeaDB is a comprehensive database of verified founder profiles, business metrics, and growth strategies designed to help entrepreneurs learn from successful $10K+/month businesses.",
+  },
+  {
+    question: "How does IdeaDB help with business growth?",
+    answer:
+      "By providing detailed tables of founder data including revenue metrics, marketing strategies, tech stacks, and business models from 1,000+ verified successful entrepreneurs.",
+  },
+  {
+    question: "Can I access IdeaDB offline?",
+    answer:
+      "Yes, once you purchase access, you can download the complete database in various formats for offline use and reference.",
+  },
+  {
+    question: "Is IdeaDB available on mobile devices?",
+    answer:
+      "The database is accessible through any web browser on mobile devices, and we provide mobile-optimized table views for easy browsing.",
+  },
+  {
+    question: "What security features does IdeaDB offer?",
+    answer:
+      "All founder data is verified and anonymized where necessary. We use secure payment processing and encrypted data storage to protect your information.",
+  },
+  {
+    question: "How can I search through the database?",
+    answer:
+      "The database includes advanced search and filtering capabilities, allowing you to find founders by industry, revenue range, business model, and more.",
+  },
+]
+
 export default function HomePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -13,39 +46,6 @@ export default function HomePage() {
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index)
   }
-
-  const faqData = [
-    {
-      question: "What is IdeaDB's primary function?",
-      answer:
-        "IdeaDB is a comprehensive database of verified founder profiles, business metrics, and growth strategies designed to help entrepreneurs learn from successful $10K+/month businesses.",
-    },
-    {
-      question: "How does IdeaDB help with business growth?",
-      answer:
-        "By providing detailed tables of founder data including revenue metrics, marketing strategies, tech stacks, and business models from 1,000+ verified successful entrepreneurs.",
-    },
-    {
-      question: "Can I access IdeaDB offline?",
-      answer:
-        "Yes, once you purchase access, you can download the complete database in various formats for offline use and reference.",
-    },
-    {
-      question: "Is IdeaDB available on mobile devices?",
-      answer:
-        "The database is accessible through any web browser on mobile devices, and we provide mobile-optimized table views for easy browsing.",
-    },
-    {
-      question: "What security features does IdeaDB offer?",
-      answer:
-        "All founder data is verified and anonymized where necessary. We use secure payment processing and encrypted data storage to protect your information.",
-    },
-    {
-      question: "How can I search through the database?",
-      answer:
-        "The database includes advanced search and filtering capabilities, allowing you to find founders by industry, revenue range, business model, and more.",
-    },
-  ]
 
   return (
     <div className="min-h-screen bg-white">
