@@ -14,10 +14,15 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "IdeaDB - Discover How 1,000+ Founders Built $10K+/Month Businesses",
+  title: "IdeasDB",
   description:
-    "Comprehensive database of verified founder data, business metrics, and growth strategies from successful entrepreneurs.",
-    generator: 'v0.app'
+    "IdeasDB — real founders, real revenue, real strategies.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
+  generator: 'v0.app'
 }
 
 export default function RootLayout({
