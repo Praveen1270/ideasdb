@@ -138,9 +138,11 @@ export default function HomePage() {
 
         {/* Database preview */}
         <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl border border-gray-200">
-          <div className="bg-neutral-900 h-96 w-full flex items-center justify-center text-neutral-300">
-            <span className="text-sm">Database preview (replace with screenshot)</span>
-          </div>
+          <img 
+            src="/demo .png" 
+            alt="Database preview screenshot" 
+            className="w-full h-auto object-contain"
+          />
         </div>
       </section>
 
@@ -334,7 +336,42 @@ export default function HomePage() {
         </div>
       </section>
 
-      
+      {/* Footer */}
+      <footer className="mt-16 px-4 md:mx-20">
+        <div className="bg-gradient-to-br from-[#FF6B35] to-[#F7931E] rounded-3xl p-6 md:p-20 relative overflow-hidden max-w-7xl mx-auto">
+          {/* Footer Content */}
+          <div className="flex flex-row justify-start items-start relative z-10 mb-12 md:mb-16">
+            {/* Links Section - Same layout for mobile and desktop */}
+            <div className="flex flex-col sm:flex-row gap-8 sm:gap-12 md:gap-30">
+              {/* Quick Links */}
+              <div>
+                <h3 className="text-white text-lg md:text-xl font-semibold mb-4 md:mb-6">Quick Links</h3>
+                <ul className="space-y-3 md:space-y-4">
+                  <li><a href="#faq" className="text-white text-sm md:text-base opacity-95 hover:opacity-100 transition-opacity">Faq</a></li>
+                  <li><a href="#features" className="text-white text-sm md:text-base opacity-95 hover:opacity-100 transition-opacity">Features</a></li>
+                  <li><a href="#examples" className="text-white text-sm md:text-base opacity-95 hover:opacity-100 transition-opacity">Examples</a></li>
+                  <li><a href="#pricing" className="text-white text-sm md:text-base opacity-95 hover:opacity-100 transition-opacity">Pricing</a></li>
+                </ul>
+              </div>
+              
+              {/* Follow us */}
+              <div>
+                <h3 className="text-white text-lg md:text-xl font-semibold mb-4 md:mb-6">Follow us</h3>
+                <ul>
+                  <li>
+                    <a href="https://twitter.com/Praveenthotakur" target="_blank" rel="noopener noreferrer" className="text-white text-sm md:text-base opacity-95 hover:opacity-100 transition-opacity flex items-center">
+                      <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                      </svg>
+                      Twitter
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
       
     </div>
   )
